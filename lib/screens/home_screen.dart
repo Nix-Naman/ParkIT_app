@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber,
-          title: Text("Parking"),
+          title: Text("Parking",style: TextStyle(color: Colors.white),),
           centerTitle: true,
         ),
         body: Padding(

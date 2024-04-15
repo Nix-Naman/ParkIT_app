@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:parkassist/screens/home_screen.dart';
+import 'package:parkassist/screens/loginScreen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -33,7 +34,7 @@ class OnboardingScreen extends StatelessWidget {
               Spacer(),
               GestureDetector(
                 onTap: () => Navigator.of(context).push(CupertinoPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => LoginScreen(),
                 )),
                 child: Container(
                   decoration: BoxDecoration(

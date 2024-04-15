@@ -22,6 +22,35 @@ class MyApp extends StatelessWidget {
       create: (context) => ParkModel(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          inputDecorationTheme: InputDecorationTheme(
+            suffixIconColor: Colors.amber,
+            prefixIconColor: Colors.amber,
+            contentPadding:
+                const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+            filled: true,
+            fillColor: Colors.amber.withOpacity(0.2),
+             hintStyle: TextStyle(color: Colors.black38),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide.none,
+              borderRadius: BorderRadius.circular(75),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide.none,
+              borderRadius: BorderRadius.circular(75),
+            ),
+             errorBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.red),
+              borderRadius: BorderRadius.circular(75),
+            ),
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                      fixedSize: Size(MediaQuery.of(context).size.width * .85, 50),
+                      backgroundColor: Colors.amber,
+                    ),
+          )
+        ),
         home: OnboardingScreen(),
       ),
     );

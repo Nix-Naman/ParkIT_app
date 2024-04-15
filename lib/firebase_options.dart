@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -46,33 +49,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDZ8QK-n7a7osC5stv3XAc1jtPk7P52rVo',
-    appId: '1:881384185995:web:6dc87e711ebc201509348e',
-    messagingSenderId: '881384185995',
-    projectId: 'my-project-1550647865517',
-    authDomain: 'my-project-1550647865517.firebaseapp.com',
-    databaseURL: 'https://my-project-1550647865517-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'my-project-1550647865517.appspot.com',
-    measurementId: 'G-PC84XXTD6F',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBx-XSpvkFcQbAnDdwv5iBn01Q5j3-Aogw',
-    appId: '1:881384185995:android:f13d543a6e816c8009348e',
-    messagingSenderId: '881384185995',
-    projectId: 'my-project-1550647865517',
-    databaseURL: 'https://my-project-1550647865517-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'my-project-1550647865517.appspot.com',
+    apiKey: 'AIzaSyCSswGaXqEzu0aMhEzFuY_-m2UUJkz0JsU',
+    appId: '1:350830012859:android:1019dcf6ca035377b7bc9e',
+    messagingSenderId: '350830012859',
+    projectId: 'parkit-5fffb',
+    storageBucket: 'parkit-5fffb.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD07lyc7nHQEouopaYKzn6NCyVQPTgtOVU',
-    appId: '1:881384185995:ios:47665a8bd2c2d06309348e',
-    messagingSenderId: '881384185995',
-    projectId: 'my-project-1550647865517',
-    databaseURL: 'https://my-project-1550647865517-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'my-project-1550647865517.appspot.com',
+    apiKey: 'AIzaSyC0mXYJhSB3p8P_CKrtk1ZE8LPC82bgYVo',
+    appId: '1:350830012859:ios:c545f6ca22d62dffb7bc9e',
+    messagingSenderId: '350830012859',
+    projectId: 'parkit-5fffb',
+    storageBucket: 'parkit-5fffb.appspot.com',
     iosBundleId: 'com.example.parkassist',
   );
 }

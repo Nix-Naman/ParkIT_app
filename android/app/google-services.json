@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "881384185995",
-    "firebase_url": "https://my-project-1550647865517-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "my-project-1550647865517",
-    "storage_bucket": "my-project-1550647865517.appspot.com"
+    "project_number": "350830012859",
+    "project_id": "parkit-5fffb",
+    "storage_bucket": "parkit-5fffb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:881384185995:android:f13d543a6e816c8009348e",
+        "mobilesdk_app_id": "1:350830012859:android:1019dcf6ca035377b7bc9e",
         "android_client_info": {
           "package_name": "com.example.parkassist"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "881384185995-gqfbkf2jm6q365q0jfvc6e1am88ucuhu.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBx-XSpvkFcQbAnDdwv5iBn01Q5j3-Aogw"
+          "current_key": "AIzaSyCSswGaXqEzu0aMhEzFuY_-m2UUJkz0JsU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "881384185995-gqfbkf2jm6q365q0jfvc6e1am88ucuhu.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "881384185995-eavbnr8hl6j3sa8of5v40autsfp7r9t7.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.beautySite"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
